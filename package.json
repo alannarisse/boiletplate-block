@@ -19,6 +19,10 @@
 	"stylelint": {
 		"extends": "@wordpress/stylelint-config/scss"
 	},
+	"lint-stagged": {
+		"*.js": "wp-scripts lint-js",
+		"*.scss": "wp-scripts lint-style"
+	},
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "^21.4.0",
 		"@wordpress/prettier-config": "^4.11.0",
@@ -26,5 +30,8 @@
 		"eslint-config-prettier": "^9.1.0",
 		"husky": "^9.1.6",
 		"stylelint": "^16.10.0"
+	},
+	"dependencies": {
+		"lint-staged": "^15.2.10"
 	}
 }
