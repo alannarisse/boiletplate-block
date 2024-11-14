@@ -20,7 +20,10 @@
 		"extends": "@wordpress/stylelint-config/scss"
 	},
 	"lint-stagged": {
-		"*.js": "wp-scripts lint-js",
+		"*.js": [
+			"wp-scripts lint-js",
+			"wp-scripts format"
+		],
 		"*.scss": "wp-scripts lint-style"
 	},
 	"devDependencies": {
